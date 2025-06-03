@@ -8,5 +8,5 @@ go run app/common/config/database/database.go -action up
 ## migrate-down:	
 	
 ```
-	go run app/common/config/database/database.go -action down
+go run app/common/config/database/database.go -action down
 ```
