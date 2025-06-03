@@ -110,7 +110,7 @@ func runMigrations(cfg DBConfig, action string) error {
 		return fmt.Errorf("failed to create migration driver: %w", err)
 	}
 
-	migrationsPath := flag.String("migrations", "app/common/config/database/migrations", "Path to migrations directory")
+	migrationsPath := flag.String("migrations", "internal/migrations", "Path to migrations directory")
 	flag.Parse()
 
 	m, err := migrate.NewWithDatabaseInstance(
